@@ -15,8 +15,11 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+// /inspiration
+
 // Controllers/routes
 app.use('/dinos', require('./routes/dinos'));
+app.use('/explore', require('./routes/explore'));
 
 // Listen
-app.listen(8000, () => console.log('🧚‍♂️ Hey! Listen! 🧚‍♀️'));
+app.listen(3000, () => console.log('Listening on Port 3000'));
